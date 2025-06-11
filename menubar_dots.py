@@ -41,11 +41,11 @@ class MicrowaveSensorApp(NSObject):
         self.statusitem.setAttributedTitle_(NSAttributedString.alloc().initWithString_attributes_(" ", {}))
 
         # MQTT Settings
-        self.mqtt_broker = "192.168.1.199"
+        self.mqtt_broker = "192.168.1.199" # Fill in with your IP MQTT Broker Address
         self.mqtt_port = 1883  # Default MQTT port
-        self.mqtt_username = "XXX"
-        self.mqtt_password = "XXX"
-        self.mqtt_topic = "all/hallway/microwave_sensor/color"
+        self.mqtt_username = "XXX" # Fill in with your username if you have one
+        self.mqtt_password = "XXX" # Fill in with your password if you have one
+        self.mqtt_topic = "menubar/dots" # Change topic if you like
 
         # Initialize MQTT client
         self.client = mqtt.Client()
