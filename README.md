@@ -13,6 +13,10 @@ A lightweight macOS status bar python script that displays colored indicator dot
 - **Threaded MQTT handling**: Non-blocking UI operations
 - **Native macOS integration**: Uses PyObjC for seamless menu bar integration
 
+## MenuBar Digits (NEW)
+
+- **Dynamic Text from MQTT: Displays any short text string (e.g., "17°C", "75%", "ON") from a specified MQTT topic directly in your menu bar.
+
 ## Requirements
 
 - macOS 10.12 or later
