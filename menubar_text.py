@@ -50,12 +50,13 @@ class MenubarDisplayApp(NSObject):
         initial_text = NSAttributedString.alloc().initWithString_attributes_("...", self.text_attributes)
         self.statusitem.setAttributedTitle_(initial_text)
 
+
         # MQTT Settings
-        self.mqtt_broker = "192.168.1.199"
-        self.mqtt_port = 1883
-        self.mqtt_username = "XXX"
-        self.mqtt_password = "XXX"
-        self.mqtt_topic = "menubar/display"
+        self.mqtt_broker = "192.168.1.199" # Fill in with your IP MQTT Broker Address
+        self.mqtt_port = 1883  # Default MQTT port
+        self.mqtt_username = "XXX" # Fill in with your username if you have one
+        self.mqtt_password = "XXX" # Fill in with your password if you have one
+        self.mqtt_topic = "menubar/text" # Change topic if you like
 
         # Initialize MQTT client
         self.client = mqtt.Client()
