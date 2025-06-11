@@ -1,6 +1,6 @@
 ![Alt text](https://i.imgur.com/QT3iRr9.gif)
 
-# MenuBar
+# MenuBar Dots
 
 A lightweight macOS status bar python script that displays colored indicator dots based on MQTT messages from sensors. Perfect for home automation systems, IoT monitoring, or any MQTT-based status indication needs.
 
@@ -13,7 +13,7 @@ A lightweight macOS status bar python script that displays colored indicator dot
 - **Threaded MQTT handling**: Non-blocking UI operations
 - **Native macOS integration**: Uses PyObjC for seamless menu bar integration
 
-## MenuBar Digits (NEW)
+## MenuBar Text (NEW)
 
 - **Dynamic Text from MQTT**: Displays any short text string (e.g., "17°C", "75%", "ON") from a specified MQTT topic directly in your menu bar.
 
@@ -32,14 +32,7 @@ A lightweight macOS status bar python script that displays colored indicator dot
    ```bash
    pip install paho-mqtt pyobjc-framework-Cocoa
    ```
-
-2. **Clone Repository**
-   ```bash
-   git clone https://github.com/yourusername/microwave-sensor-statusbar.git
-   cd microwave-sensor-statusbar
-   ```
-
-3. **Configure MQTT Settings**
+2. **Configure MQTT Settings**
    
    Edit the following variables in the script:
    ```python
@@ -47,12 +40,12 @@ A lightweight macOS status bar python script that displays colored indicator dot
    self.mqtt_port = 1883                    # MQTT port (default: 1883)
    self.mqtt_username = "XXX"          # MQTT username
    self.mqtt_password = "XXX"          # MQTT password
-   self.mqtt_topic = "all/hallway/example/color"  # MQTT topic to subscribe to
+   self.mqtt_topic = "menubar/display"  # MQTT topic to subscribe to
    ```
 
-4. **Run the Application**
+3. **Run the Application**
    ```bash
-   python3 microwave_sensor_app.py
+   python3 menubar_dots.py
    ```
 
 ## Usage
@@ -63,23 +56,6 @@ The application subscribes to the configured MQTT topic and displays colored dot
 - **Yellow dot**: Send `"yellow"` to MQTT topic  
 - **Green dot**: Send `"green"` to MQTT topic
 - **Clear indicator**: Send `"off"` to hide the dot
-
-## Configuration
-
-Key configuration options in the script:
-
-```python
-# MQTT Configuration
-mqtt_broker = "your.mqtt.broker.ip"
-mqtt_port = 1883
-mqtt_username = "your_username"
-mqtt_password = "your_password"
-mqtt_topic = "your/mqtt/topic"
-
-# Visual Configuration
-font_size = 14.0                    # Menu bar font size
-baseline_offset = -0.75             # Vertical positioning of dots
-```
 
 ## Colors
 
