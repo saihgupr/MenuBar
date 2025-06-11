@@ -15,7 +15,7 @@ A lightweight macOS status bar python script that displays colored indicator dot
 
 ## MenuBar Digits (NEW)
 
-- **Dynamic Text from MQTT: Displays any short text string (e.g., "17°C", "75%", "ON") from a specified MQTT topic directly in your menu bar.
+- **Dynamic Text from MQTT**: Displays any short text string (e.g., "17°C", "75%", "ON") from a specified MQTT topic directly in your menu bar.
 
 ![Alt text](https://i.imgur.com/SNXdQzg.png)
 
