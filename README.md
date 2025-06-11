@@ -1,4 +1,4 @@
-![Alt text](https://i.imgur.com/jjjjJOD.png)
+![Alt text](https://i.imgur.com/g742w8d.gif)
 
 # MenuBar
 
