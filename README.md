@@ -1,4 +1,4 @@
-# MenuBar
+# MenuBar MQTT
 
 A lightweight macOS status bar Python script that displays status from MQTT messages — either as **colored indicator dots** or **dynamic text**. Perfect for home automation systems, IoT monitoring, or any MQTT-based status indication needs.
 
