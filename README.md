@@ -1,5 +1,5 @@
 > **Note**  
-> This project has been replaced by a native macOS app [MQTTMenuBarApp ↗](https://github.com/saihgupr/MQTTMenuBarApp)  
+> This project has been replaced by a native macOS app [MQTTMenuBar ↗](https://github.com/saihgupr/MQTTMenuBar)  
 > For the best experience on macOS, use the new version.
 
 # MenuBar MQTT
